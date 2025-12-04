@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.html">
+</head>
+<body>
+    <div id="contact" class="section">
+    <h1>Contact Form</h1>
+    <form>
+        <fieldset style="background-color: blanchedalmond; width: 500px; border-color: rgb(49, 49, 49); border-radius: 5%;">
+            <h2>Please make sure your details are entered correctly</h2>
+            <p><b>FULL NAME</b><br>
+            <input type="text" id="name" name="name" size="40" maxlength="50" placeholder="Enter Your Full Name" required></p>
+            <p><b>EMAIL ADDRESS</b><br>
+            <input type="text" name="email" id="email" size="40" maxlength="50" placeholder="Enter Your Email address" required></p>
+            <p><b>SUBJECT</b><br>
+            <input type="text" name="subject" id="subject" size="40" maxlength="50" placeholder="Enter Your Subject" required></p>
+            <p><b>MESSAGE:</b><br>
+            <textarea name="message" id="message" maxlength="800" placeholder="..." style="width: 350px; height: 200px"></textarea></p>
+            <div>
+                <input type="button" name="submit" value="Submit" onclick="validatelogin()">
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+</div>
+
+<script>
+function showSection(sectionId) {
+    
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(sec => sec.classList.remove('active'));
+
+    
+    document.getElementById(sectionId).classList.add('active');
+}
+
+function validatelogin(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    if(name !== "" && email !== "" && subject !== "" && message !== ""){
+        alert("Form submitted successfully!\n\nFull Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message);
+    } else {
+        alert("Please fill out the form.")
+    }
+}
+</script>
+</body>
+</html>
