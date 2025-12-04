@@ -194,7 +194,7 @@ header .fa-bars{
 
 .about{
     min-height: 100vh;
-    background: url(../pic/back1.jpg) no-repeat;
+    background: url(../pic/1600w--o3b85xDAAY.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -240,7 +240,7 @@ header .fa-bars{
 
 .work{
     min-height: 100vh;
-    background: url(../pic/back1.jpg) no-repeat;
+    background: url() no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -313,7 +313,7 @@ header .fa-bars{
 
 .contact{
     min-height: 100vh;
-    background: url(../pic/all1.jpg) no-repeat;
+    background: url() no-repeat;
     background-size: cover;
     background-position: center;
 }
